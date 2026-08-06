@@ -128,9 +128,6 @@ AWS Fargate removes the need to provision or manage EC2 instances for the final 
   - Docker Testing (8080)
 
 ---
-
----
-
 # 📄 Documentation
 
 The complete implementation guide with commands, configurations, screenshots, and deployment steps is available in:
