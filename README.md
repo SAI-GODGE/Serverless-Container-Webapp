@@ -96,7 +96,7 @@ AWS Fargate removes the need to provision or manage EC2 instances for the final 
 ├── index.html                
 ├── Dockerfile                 
 ├── README.md                   
-|__ Serverless-container-webapp.pdf
+|__ Serverless Container Deployment on AWS.pdf
 
 ```
 
@@ -129,28 +129,13 @@ AWS Fargate removes the need to provision or manage EC2 instances for the final 
 
 ---
 
-# 📷 Screenshots
-
-The repository includes screenshots of:
-
-- EC2 Instance
-- Docker Installation
-- Docker Image Build
-- Running Docker Container
-- Amazon ECR Repository
-- Image Push
-- ECS Cluster
-- ECS Task Definition
-- Running Fargate Task
-- Final Web Application
-
 ---
 
 # 📄 Documentation
 
 The complete implementation guide with commands, configurations, screenshots, and deployment steps is available in:
 
-**📄 task.pdf**
+**📄 Serverless Container Deployment on AWS.pdf**
 
 ---
 
