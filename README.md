@@ -96,7 +96,8 @@ AWS Fargate removes the need to provision or manage EC2 instances for the final 
 ├── index.html                
 ├── Dockerfile                 
 ├── README.md                   
-├── Serverless-container-webapp.pdf
+|__ Serverless-container-webapp.pdf
+
 ```
 
 ---
