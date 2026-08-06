@@ -93,23 +93,10 @@ AWS Fargate removes the need to provision or manage EC2 instances for the final 
 
 ```text
 .
-├── index.html                 # Portfolio website
-├── Dockerfile                 # Docker image configuration
-├── README.md
-├── task.pdf                   # Complete implementation guide
-├── architecture/
-│   └── architecture.png
-└── screenshots/
-    ├── 01-ec2-instance.png
-    ├── 02-docker-installation.png
-    ├── 03-docker-build.png
-    ├── 04-docker-container.png
-    ├── 05-ecr-repository.png
-    ├── 06-image-push.png
-    ├── 07-ecs-cluster.png
-    ├── 08-task-definition.png
-    ├── 09-fargate-task.png
-    └── 10-final-output.png
+├── index.html                
+├── Dockerfile                 
+├── README.md                   
+├── Serverless-container-webapp.pdf
 ```
 
 ---
