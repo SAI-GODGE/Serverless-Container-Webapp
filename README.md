@@ -169,6 +169,7 @@ The project demonstrates how containerized applications can be deployed on AWS w
 - Implementing an end-to-end cloud deployment workflow.
 
 
+---
 <p align="center">
   <b>Built as a hands-on AWS and DevOps learning project.</b>
 </p>
