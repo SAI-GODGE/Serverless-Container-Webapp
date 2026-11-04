@@ -135,7 +135,21 @@ The complete implementation guide, including commands, configurations, screensho
 
 ## 🎯 Skills Demonstrated
 
-`Docker` `Amazon ECR` `Amazon ECS` `AWS Fargate` `IAM` `AWS CLI` `VPC Networking` `Security Groups` `Containerization` `Cloud Deployment`
+<p align="center">
+  <img src="https://skillicons.dev/icons?i=docker,aws,linux,html,bash,git" alt="Docker, AWS, Linux, HTML, Bash, Git" />
+</p>
+
+<p align="center">
+  <img src="https://img.shields.io/badge/Amazon%20ECR-FF9900?style=for-the-badge&logo=amazonaws&logoColor=white" alt="Amazon ECR" />
+  <img src="https://img.shields.io/badge/Amazon%20ECS-FF9900?style=for-the-badge&logo=amazonaws&logoColor=white" alt="Amazon ECS" />
+  <img src="https://img.shields.io/badge/AWS%20Fargate-FF9900?style=for-the-badge&logo=amazonaws&logoColor=white" alt="AWS Fargate" />
+</p>
+
+<p align="center">
+  <img src="https://img.shields.io/badge/IAM-232F3E?style=for-the-badge&logo=amazonaws&logoColor=white" alt="AWS IAM" />
+  <img src="https://img.shields.io/badge/VPC-232F3E?style=for-the-badge&logo=amazonaws&logoColor=white" alt="Amazon VPC" />
+  <img src="https://img.shields.io/badge/AWS%20CLI-232F3E?style=for-the-badge&logo=amazonaws&logoColor=white" alt="AWS CLI" />
+</p>
 
 ## ✅ Project Outcome
 
