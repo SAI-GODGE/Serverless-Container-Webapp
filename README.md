@@ -174,8 +174,3 @@ The project demonstrates how containerized applications can be deployed on AWS w
   <b>Built as a hands-on AWS and DevOps learning project.</b>
 </p>
 
-# 👨‍💻 Author
-
-**Saiprasad Sambhaji Godge**
-
-
