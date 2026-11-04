@@ -131,7 +131,7 @@ serverless-container-deployment/
 
 The complete implementation guide, including commands, configurations, screenshots, and deployment steps, is available here:
 
-[📘 View the complete deployment guide](./Serverless%20Container%20Deployment%20on%20AWS.pdf)
+[📘 View the complete deployment guide](./ServerlessContainerDeployment.pdf)
 
 ## 🎯 Skills Demonstrated
 
