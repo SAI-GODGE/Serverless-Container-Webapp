@@ -1,4 +1,4 @@
-# 🚀 Serverless Container Deployment on AWS
+<h1 align="center">🚀 Serverless Container Deployment on AWS</h1>
 
 <p align="center">
   <b>Deploying a containerized portfolio website using Docker, Amazon ECR, Amazon ECS, and AWS Fargate.</b>
