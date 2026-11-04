@@ -104,7 +104,7 @@ flowchart TD
 - Selected AWS Fargate as the compute launch type.
 - Configured networking and security groups.
 - Launched the container and accessed the website through its public IP.
----
+
 ## 🔐 Security Configuration
 
 | Component | Configuration |
