@@ -1,175 +1,160 @@
 # 🚀 Serverless Container Deployment on AWS
 
-Deploying a containerized web application on AWS using **Docker**, **Amazon ECR**, **Amazon ECS**, and **AWS Fargate**.
+<p align="center">
+  <b>Deploying a containerized portfolio website using Docker, Amazon ECR, Amazon ECS, and AWS Fargate.</b>
+</p>
 
-This project demonstrates how to build a Docker image, store it securely in Amazon Elastic Container Registry (ECR), and deploy it on Amazon ECS using AWS Fargate—allowing the application to run **without managing any servers**.
+<p align="center">
+  <img src="https://img.shields.io/badge/AWS-Fargate-orange?logo=aws&logoColor=white" alt="AWS Fargate"/>
+  <img src="https://img.shields.io/badge/Docker-Containerization-2496ED?logo=docker&logoColor=white" alt="Docker"/>
+  <img src="https://img.shields.io/badge/Amazon-ECR-FF9900?logo=amazonaws&logoColor=white" alt="Amazon ECR"/>
+  <img src="https://img.shields.io/badge/Amazon-ECS-FF9900?logo=amazonaws&logoColor=white" alt="Amazon ECS"/>
+  <img src="https://img.shields.io/badge/Status-Completed-success" alt="Project Status"/>
+</p>
 
 ---
 
-# 📖 Project Overview
+## 📌 Overview
 
-In this project, I containerized my portfolio website using Docker, tested it on an Amazon EC2 instance, and pushed the Docker image to Amazon Elastic Container Registry (ECR). The image was then deployed using Amazon ECS with AWS Fargate.
+This project demonstrates the end-to-end deployment of a containerized portfolio website on AWS using a serverless container architecture.
 
-AWS Fargate removes the need to provision or manage EC2 instances for the final deployment, making the application a **serverless container deployment**.
+The website was containerized using Docker, tested on an Amazon EC2 instance, and stored in Amazon Elastic Container Registry (ECR). The container was then deployed through Amazon Elastic Container Service (ECS) using AWS Fargate.
 
----
+With Fargate, AWS manages the underlying compute infrastructure, allowing the application to run without manually provisioning or managing EC2 instances for the production deployment.
 
-# 🏗️ Architecture
+## 🏗️ Architecture
 
-```text
-            Portfolio Website
-                   │
-                   ▼
-              Dockerfile
-                   │
-                   ▼
-             Docker Image
-                   │
-                   ▼
-            Amazon ECR
-                   │
-                   ▼
-          Amazon ECS Cluster
-                   │
-                   ▼
-            AWS Fargate
-                   │
-                   ▼
-        Public IP / Web Browser
+```mermaid
+flowchart TD
+    A["Portfolio Website<br/>HTML"] --> B["Dockerfile"]
+    B --> C["Docker Image"]
+    C --> D["Amazon ECR"]
+    D --> E["Amazon ECS"]
+    E --> F["AWS Fargate"]
+    F --> G["Public IP"]
+    G --> H["Web Browser"]
+
+    style A fill:#E8F2FF,stroke:#2563EB,color:#111827
+    style D fill:#FFF4E5,stroke:#F59E0B,color:#111827
+    style E fill:#FFF4E5,stroke:#F59E0B,color:#111827
+    style F fill:#E6F9ED,stroke:#16A34A,color:#111827
+    style H fill:#E8F2FF,stroke:#2563EB,color:#111827
 ```
 
----
+## ✨ Key Features
 
-# 🛠️ AWS Services Used
+- Containerized portfolio website using Docker.
+- Custom Docker image stored in Amazon ECR.
+- ECS task definition for container deployment.
+- Serverless container execution using AWS Fargate.
+- Public access to the deployed web application.
+- IAM-based authentication and access management.
+- Container networking and security group configuration.
 
-- Amazon EC2
-- Amazon ECR
-- Amazon ECS
-- AWS Fargate
-- IAM
-- VPC
-- Security Groups
-- AWS CLI
+## 🛠️ Technology Stack
 
----
+| Category | Technologies |
+|---|---|
+| Cloud Platform | AWS |
+| Containerization | Docker |
+| Container Registry | Amazon ECR |
+| Container Orchestration | Amazon ECS |
+| Compute | AWS Fargate |
+| Web Server | Apache HTTP Server |
+| Operating System | Amazon Linux 2023 |
+| Web Technologies | HTML |
+| Cloud Tools | AWS CLI, IAM, VPC |
 
-# 💻 Technologies Used
+## 🔄 Deployment Workflow
 
-- Docker
-- Apache HTTP Server
-- Amazon Linux 2023
-- HTML
-- AWS CLI
+```mermaid
+flowchart TD
+    A["Create Portfolio Website"] --> B["Build Docker Image"]
+    B --> C["Test Container on EC2"]
+    C --> D["Create ECR Repository"]
+    D --> E["Push Image to ECR"]
+    E --> F["Create ECS Cluster"]
+    F --> G["Configure Task Definition"]
+    G --> H["Run ECS Task on Fargate"]
+    H --> I["Access Website via Public IP"]
 
----
-
-# ✨ Features
-
-- Containerized portfolio website
-- Docker image creation
-- Image storage in Amazon ECR
-- ECS Task Definition deployment
-- Serverless deployment with AWS Fargate
-- Publicly accessible web application
-- Secure IAM authentication
-- Scalable container architecture
-
----
-
-# 🔄 Workflow
-
-1. Create the portfolio website.
-2. Build a Docker image.
-3. Test the container locally on Amazon EC2.
-4. Push the Docker image to Amazon ECR.
-5. Create an ECS Cluster.
-6. Create an ECS Task Definition.
-7. Deploy the container using AWS Fargate.
-8. Access the application through the Fargate public IP.
-
----
-
-# 📁 Project Structure
-
-```text
-.
-├── index.html                
-├── Dockerfile                 
-├── README.md                   
-|__ Serverless Container Deployment on AWS.pdf
-
+    style A fill:#E8F2FF,stroke:#2563EB,color:#111827
+    style H fill:#E6F9ED,stroke:#16A34A,color:#111827
+    style I fill:#E6F9ED,stroke:#16A34A,color:#111827
 ```
 
+## ⚙️ Implementation
+
+### 1. Containerization
+
+- Created a Dockerfile using Apache HTTP Server.
+- Built a Docker image containing the portfolio website.
+- Ran the container on an EC2 instance to verify application functionality.
+
+### 2. Amazon ECR
+
+- Created a private ECR repository.
+- Authenticated Docker using AWS CLI.
+- Tagged and pushed the Docker image to ECR.
+
+### 3. Amazon ECS and Fargate
+
+- Created an ECS cluster.
+- Configured an ECS task definition with the ECR image.
+- Selected AWS Fargate as the compute launch type.
+- Configured networking and security groups.
+- Launched the container and accessed the website through its public IP.
+
+## 🔐 Security Configuration
+
+| Component | Configuration |
+|---|---|
+| IAM | IAM user with ECR access |
+| ECR | Private container image repository |
+| SSH | Port 22 for EC2 administration |
+| HTTP | Port 80 for web traffic |
+| Testing | Port 8080 for container testing |
+
+The EC2 instance was used for building and testing the image. The final application runs on Fargate without requiring a manually managed EC2 host.
+
+## 📂 Project Structure
+
+```text
+serverless-container-deployment/
+├── index.html
+├── Dockerfile
+├── README.md
+└── Serverless Container Deployment on AWS.pdf
+```
+
+## 📄 Documentation
+
+The complete implementation guide, including commands, configurations, screenshots, and deployment steps, is available here:
+
+[📘 View the complete deployment guide](./Serverless%20Container%20Deployment%20on%20AWS.pdf)
+
+## 🎯 Skills Demonstrated
+
+`Docker` `Amazon ECR` `Amazon ECS` `AWS Fargate` `IAM` `AWS CLI` `VPC Networking` `Security Groups` `Containerization` `Cloud Deployment`
+
+## ✅ Project Outcome
+
+Successfully deployed a portfolio website as a Docker container on Amazon ECS using AWS Fargate.
+
+The project demonstrates how containerized applications can be deployed on AWS without manually managing the underlying compute infrastructure.
+
+## 📚 Key Learnings
+
+- Building and managing Docker images.
+- Publishing container images to Amazon ECR.
+- Deploying containerized applications using Amazon ECS.
+- Configuring Fargate tasks and networking.
+- Understanding IAM permissions and container security.
+- Implementing an end-to-end cloud deployment workflow.
+
 ---
 
-# ⚙️ Deployment Steps
+<p align="center">
+  <b>Built as a hands-on AWS and DevOps learning project.</b>
+</p>
 
-- Launch an Amazon Linux EC2 instance.
-- Install Docker.
-- Build the Docker image.
-- Test the application inside a Docker container.
-- Create an Amazon ECR repository.
-- Authenticate Docker with ECR.
-- Push the Docker image.
-- Create an ECS Cluster.
-- Create an ECS Task Definition.
-- Deploy using AWS Fargate.
-- Access the application using the public IP.
-
----
-
-# 🔐 Security
-
-- IAM user for Amazon ECR access
-- AmazonEC2ContainerRegistryFullAccess policy
-- Security Groups configured for:
-  - SSH (22)
-  - HTTP (80)
-  - Docker Testing (8080)
-
----
-# 📄 Documentation
-
-The complete implementation guide with commands, configurations, screenshots, and deployment steps is available in:
-
-**📄 Serverless Container Deployment on AWS.pdf**
-
----
-
-# 🎯 Skills Demonstrated
-
-- Docker
-- Containerization
-- Amazon ECR
-- Amazon ECS
-- AWS Fargate
-- IAM
-- AWS CLI
-- VPC Networking
-- Security Groups
-- Serverless Computing
-- Cloud Deployment
-
----
-
-# ✅ Result
-
-The portfolio website was successfully containerized using Docker, stored in Amazon ECR, and deployed through Amazon ECS using AWS Fargate. The application became publicly accessible without managing any servers, demonstrating a practical implementation of serverless container deployment on AWS.
-
----
-
-# 📚 Key Learnings
-
-- Building Docker images
-- Managing container registries
-- Deploying containers on ECS
-- Running applications with AWS Fargate
-- IAM authentication for container services
-- Container networking on AWS
-- End-to-end cloud deployment
-
----
-
-# 👨‍💻 Author
-
-**Saiprasad Sambhaji Godge**
