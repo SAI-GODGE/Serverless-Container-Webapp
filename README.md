@@ -133,6 +133,7 @@ The complete implementation guide, including commands, configurations, screensho
 
 [📘 View the complete deployment guide](./Serverless%20Container%20Deployment%20AWS%20Docker%20ECR%20ECS%20Fargate.pdf)
 
+
 ## 🎯 Skills Demonstrated
 
 <p align="center">
@@ -150,6 +151,7 @@ The complete implementation guide, including commands, configurations, screensho
   <img src="https://img.shields.io/badge/VPC-232F3E?style=for-the-badge&logo=amazonaws&logoColor=white" alt="Amazon VPC" />
   <img src="https://img.shields.io/badge/AWS%20CLI-232F3E?style=for-the-badge&logo=amazonaws&logoColor=white" alt="AWS CLI" />
 </p>
+
 
 ## ✅ Project Outcome
 
