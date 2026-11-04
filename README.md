@@ -90,13 +90,13 @@ flowchart TD
 - Created a Dockerfile using Apache HTTP Server.
 - Built a Docker image containing the portfolio website.
 - Ran the container on an EC2 instance to verify application functionality.
-
+---
 ### 2. Amazon ECR
 
 - Created a private ECR repository.
 - Authenticated Docker using AWS CLI.
 - Tagged and pushed the Docker image to ECR.
-
+---
 ### 3. Amazon ECS and Fargate
 
 - Created an ECS cluster.
@@ -104,7 +104,7 @@ flowchart TD
 - Selected AWS Fargate as the compute launch type.
 - Configured networking and security groups.
 - Launched the container and accessed the website through its public IP.
-
+---
 ## 🔐 Security Configuration
 
 | Component | Configuration |
